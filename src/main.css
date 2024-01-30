@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "NeueRegradeVariable";
+  src: url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.eot");
+  src:
+    url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.eot")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.woff2")
+      format("woff2"),
+    url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.woff")
+      format("woff"),
+    url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.ttf")
+      format("truetype"),
+    url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.svg#NeueRegradeVariable")
+      format("svg");
+}
+
+:root {
+  font-family: "NeueRegrade", sans-serif;
+}
+
+.active {
+  color: white;
+}
