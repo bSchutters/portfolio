@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'NeueRegradeVariable';
+    src: url('fonts/NeueRegradeVariable.eot');
+    src: url('fonts/NeueRegradeVariable.eot') format('embedded-opentype'),
+         url('fonts/NeueRegradeVariable.woff2') format('woff2'),
+         url('fonts/NeueRegradeVariable.woff') format('woff'),
+         url('fonts/NeueRegradeVariable.ttf') format('truetype'),
+         url('fonts/NeueRegradeVariable.svg#NeueRegradeVariable') format('svg');
+}
