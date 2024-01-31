@@ -28,7 +28,7 @@ export default function Nav() {
 
   return (
     <nav className="text-md z-20 flex w-full justify-between">
-      <Card className="text-lg font-extrabold tracking-wide">
+      <Card className="text-lg font-bold tracking-wide">
         <Link to="/">bSchutters</Link>
       </Card>
       <Card className="hidden gap-5 font-bold tracking-wide lg:flex">
