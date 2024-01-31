@@ -4,7 +4,7 @@ import Link from "../common/link";
 import { LuChevronUp, LuMenu } from "react-icons/lu";
 
 export default function Nav() {
-  const [opacity, setOpacity] = useState(0);
+  const [opacity, setOpacity] = useState("opacity-0");
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -13,12 +13,11 @@ export default function Nav() {
   };
 
   useEffect(() => {
-    // Button is displayed after scrolling for 500 pixels
     const toggleVisibility = () => {
-      if (window.scrollY > 500) {
-        setOpacity(1);
+      if (window.scrollY > 100) {
+        setOpacity("opacity-100");
       } else {
-        setOpacity(0);
+        setOpacity("opacity-0");
       }
     };
 
@@ -28,7 +27,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <nav className="text-md z-20 flex w-full justify-between lg:fixed lg:pr-[200px]">
+    <nav className="text-md z-20 flex w-full justify-between">
       <Card className="text-lg font-extrabold tracking-wide">
         <Link to="/">bSchutters</Link>
       </Card>
@@ -44,7 +43,7 @@ export default function Nav() {
       </Card>
 
       <div
-        className={`bg-primary/40 fixed bottom-10 right-10 rounded-full p-2 backdrop-blur-xl transition-all ease-in-out opacity-${opacity} duration-300`}
+        className={`bg-primary/40 fixed bottom-10 right-10 rounded-full p-2 backdrop-blur-xl transition-all ease-in-out ${opacity} duration-300 hover:cursor-pointer`}
         onClick={scrollToTop}
       >
         <LuChevronUp size={30} />
