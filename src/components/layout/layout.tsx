@@ -7,7 +7,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="flex size-full min-h-screen flex-col gap-24 bg-black px-[50px] py-[25px] text-white lg:px-[100px]  lg:py-[50px]">
+    <div className="bg-backg flex min-h-screen max-w-full flex-col gap-24 px-[50px] py-[25px] text-white lg:px-[100px] lg:py-[50px]">
       <Nav />
       {children}
       <Footer />

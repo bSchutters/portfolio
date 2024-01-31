@@ -9,7 +9,7 @@ export default function Footer() {
         <p>All rights reserved. © 2024 </p>
       </div>
 
-      <div className="flex w-full flex-col gap-5 lg:w-1/2">
+      <div className="flex w-full flex-col gap-5 font-bold lg:w-1/2 ">
         <div className="flex w-full flex-col gap-5 lg:flex-row">
           <Card className="flex w-full flex-col gap-2 lg:w-1/2">
             <h3 className="mb-4 text-lg font-semibold">Navigate</h3>
@@ -20,7 +20,7 @@ export default function Footer() {
             <Link to="/contact">Contact</Link>
           </Card>
           <Card className="flex w-full flex-col gap-2 lg:w-1/2">
-            <h3 className="mb-4 text-lg font-semibold">Featured Work</h3>
+            <h3 className="mb-4 text-lg font-bold">Featured Work</h3>
             <Link to="/work/dayread">Dayread</Link>
             <Link to="/work/popa">Popcorn Palace</Link>
             <Link to="/work/smilecoffee">Smile Coffee</Link>
@@ -28,7 +28,7 @@ export default function Footer() {
           </Card>
         </div>
         <Card className="flex items-center justify-between">
-          <h3 className="text-lg font-semibold">Links</h3>
+          <h3 className="text-lg font-bold">Links</h3>
           <div className="flex gap-5">
             <a
               href="https://linkedin.com/in/bryan-schutters"
