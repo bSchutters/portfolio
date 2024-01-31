@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "NeueRegradeVariable";
+  font-family: "NeueRegrade";
   src: url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.eot");
   src:
     url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.eot")
@@ -20,6 +20,7 @@
 
 :root {
   font-family: "NeueRegrade", sans-serif;
+  letter-spacing: 1px;
 }
 
 .active {
