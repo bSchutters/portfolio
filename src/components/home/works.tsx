@@ -1,4 +1,7 @@
+import { LuChevronRight } from "react-icons/lu";
+import Card from "../common/card";
 import Work from "../common/work";
+import Link from "../common/link";
 
 export default function Works() {
   return (
@@ -7,20 +10,26 @@ export default function Works() {
         title="Dayread"
         desc="Social network concept"
         to="/work/dayread"
-        img="https://assets-global.website-files.com/625816a3416990dd61391b9b/650980b8a430fdb7f21c12dc_800x600.jpg"
+        img="./dayread_iphone_mockup.jpg"
       />
       <Work
         title="Popcorn Palace"
         desc="Rooftop cinema concept"
         to="/work/popa"
-        img="https://assets-global.website-files.com/625816a3416990dd61391b9b/650980b8a430fdb7f21c12dc_800x600.jpg"
+        img="./popa_mb_mockup.jpg"
       />
       <Work
         title="Smile Coffee"
         desc="Coffee shop concept"
         to="/work/smilecoffee"
-        img="https://assets-global.website-files.com/625816a3416990dd61391b9b/650980b8a430fdb7f21c12dc_800x600.jpg"
+        img="./smilecoffee_mac_mockup.jpg"
       />
+      <Link to="/work">
+        <Card className="flex items-center gap-4">
+          <p>View more work</p>
+          <LuChevronRight />
+        </Card>
+      </Link>
     </div>
   );
 }

@@ -7,6 +7,8 @@ export default function WorkPage() {
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
   const [filteredItems, setFilteredItems] = useState(items);
 
+  console.log("items", items);
+
   const filters = [
     "Use cases",
     "Web design",
