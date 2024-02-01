@@ -43,7 +43,7 @@ export default function Nav() {
       </Card>
 
       <div
-        className={`bg-primary/40 fixed bottom-10 right-10 rounded-full p-2 backdrop-blur-xl transition-all ease-in-out ${opacity} duration-300 hover:cursor-pointer`}
+        className={`fixed bottom-10 right-10 rounded-full bg-primary/40 p-2 backdrop-blur-xl transition-all ease-in-out ${opacity} duration-300 hover:cursor-pointer`}
         onClick={scrollToTop}
       >
         <LuChevronUp size={30} />

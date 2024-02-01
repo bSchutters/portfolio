@@ -34,6 +34,10 @@ const router = createBrowserRouter([
     path: "/contact",
     element: <Contact />,
   },
+  {
+    path: "/work/:id",
+    element: <Contact />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

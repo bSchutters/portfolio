@@ -1,19 +1,27 @@
+
 //Tags: Use cases, Web design, Web app, Branding, Social media
 
 export const items = [
     {
       name: "Dayread",
       desc: "Social network concept",
-      img: "https://assets-global.website-files.com/625816a3416990dd61391b9b/650980b8a430fdb7f21c12dc_800x600.jpg",
+      img: "./dayread_iphone_mockup.jpg",
       to: "/work/dayread",
-      category: ["Web app", "Use cases"]
+      category: ["Web app"]
     },
     {
-      name: "Test",
-      desc: "TEST network concept",
-      img: "https://assets-global.website-files.com/625816a3416990dd61391b9b/650980b8a430fdb7f21c12dc_800x600.jpg",
+      name: "Popcorn Palace",
+      desc: "Rooftop cinema website concept",
+      img:"./popa_mb_mockup.jpg",
+      to: "/work/popa",
+      category: ["Web app"]
+    },
+    {
+      name: "Smile Coffee",
+      desc: "Coffee shop website concept",
+      img: "./smilecoffee_mac_mockup.jpg",
       to: "/work/dayread",
-      category: ["Social media"]
+      category: ["Web app"]
     },
    
     
