@@ -3,7 +3,7 @@ import Link from "../common/link";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-5 lg:flex-row">
+    <footer className="footer-anim flex flex-col gap-5 lg:flex-row">
       <div className="order-last flex w-full items-end justify-between lg:order-first lg:w-1/2 lg:justify-start">
         <p className="lg:hidden">bSchutters.</p>
         <p>All rights reserved. © 2024 </p>

@@ -5,11 +5,15 @@ interface WorkProps {
   desc: string;
   img: string;
   to: string;
+  className?: string;
 }
 
-export default function Work({ title, desc, img, to }: WorkProps) {
+export default function Work({ title, desc, img, to, className }: WorkProps) {
   return (
-    <Link to={to} className="relative flex w-full flex-col gap-5 lg:w-4/5">
+    <Link
+      to={to}
+      className={`relative flex w-full flex-col gap-5 lg:w-4/5 ${className}`}
+    >
       <img
         src={img}
         alt={title}

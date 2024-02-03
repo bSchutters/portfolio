@@ -2,8 +2,28 @@ import { useCallback, useEffect, useState } from "react";
 import { items } from "./items";
 import Layout from "../../components/layout/layout";
 import Work from "../../components/common/work";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function WorkPage() {
+  useGSAP(() => {
+    const tl = gsap.timeline();
+
+    tl.fromTo(
+      ".tag-anim",
+      { x: -20, opacity: 0 },
+      { x: 0, opacity: 1, duration: 1, stagger: 0.5 },
+      "-=0.4",
+    );
+    tl.fromTo(
+      ".item",
+      { x: -20, opacity: 0 },
+      { x: 0, opacity: 1, duration: 1, stagger: 0.5 },
+      "-=0.8",
+    );
+    tl.fromTo(".footer-anim", { opacity: 0 }, { opacity: 1, duration: 1 });
+  });
+
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
   const [filteredItems, setFilteredItems] = useState(items);
 
@@ -47,7 +67,7 @@ export default function WorkPage() {
         {filters.map((category, idx) => (
           <button
             onClick={() => handleFilterButtonClick(category)}
-            className={`flex-grow rounded-full px-4 py-2 ${selectedFilters.includes(category) ? "bg-secondary" : "bg-primary"}`}
+            className={`tag-anim flex-grow rounded-full px-4 py-2 ${selectedFilters.includes(category) ? "bg-secondary" : "bg-primary"}`}
             key={`filters-${idx}`}
           >
             {category}
