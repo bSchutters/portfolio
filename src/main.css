@@ -3,24 +3,30 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "NeueRegrade";
-  src: url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.eot");
+  font-family: "Diamond";
   src:
-    url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.eot")
-      format("embedded-opentype"),
-    url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.woff2")
+    url("../src/assets/fonts/Diamond/DiamondGrotesk-Regular.woff2")
       format("woff2"),
-    url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.woff")
-      format("woff"),
-    url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.ttf")
-      format("truetype"),
-    url("../src/assets/fonts/NeueRegrade/NeueRegradeVariable.svg#NeueRegradeVariable")
-      format("svg");
+    url("../src/assets/fonts/Diamond/DiamondGrotesk-Regular.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair";
+  src:
+    url("../src/assets/fonts/Playfair/PlayfairDisplay-Regular.woff2")
+      format("woff2"),
+    url("../src/assets/fonts/Playfair/PlayfairDisplay-Regular.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
-  font-family: "NeueRegrade", sans-serif;
-  letter-spacing: 1px;
+  font-family: Diamond, sans-serif;
 }
 
 .active {

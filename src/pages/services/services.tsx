@@ -35,15 +35,20 @@ export default function Services() {
   return (
     <Layout>
       <div className="overflow-hidden">
-        <p className="text-anim text-5xl lg:w-2/3">
-          I imagine digital solutions & <br />I design, build and create
-          responsive user-friendly web applications{" "}
+        <p className="text-anim text-5xl leading-snug lg:w-2/3">
+          I imagine digital solutions & <br />I
+          <span className="font-playfair italic"> design</span>,
+          <span className="font-playfair italic"> build</span> and
+          <span className="font-playfair italic"> create </span>
+          responsive user-friendly web applications
         </p>
       </div>
 
       <div className="flex w-full flex-col gap-5 lg:flex-row">
         <Card className="card-anim flex w-full flex-col gap-5 lg:w-1/2">
-          <h3 className="text-xl font-bold">Developement</h3>
+          <h3 className="font-playfair text-xl font-bold italic">
+            Developement
+          </h3>
 
           <ul className="flex flex-col gap-2 overflow-hidden">
             <Service title="HTML, CSS, Javascript" className="services-anim" />
@@ -55,7 +60,7 @@ export default function Services() {
           </ul>
         </Card>
         <Card className="card-anim flex w-full flex-col gap-5 lg:w-1/2">
-          <h3 className="text-xl font-bold">Design</h3>
+          <h3 className="font-playfair text-xl font-bold italic">Design</h3>
 
           <ul className="flex flex-col gap-2 overflow-hidden">
             <Service title="Web design" className="services-anim" />

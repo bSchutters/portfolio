@@ -8,6 +8,10 @@ export default {
         primary: "#1C1C1E",
         secondary: "#8A8A8B",
       },
+      fontFamily: {
+        diamond: ["Diamond", "sans-serif"],
+        playfair: ["Playfair", "sans-serif"],
+      },
     },
   },
   plugins: [],

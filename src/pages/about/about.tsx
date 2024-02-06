@@ -24,7 +24,9 @@ export default function About() {
     <Layout>
       <div className="flex flex-col gap-10 text-xl lg:flex-row lg:text-2xl">
         <div className="flex  w-full  flex-col gap-5 overflow-hidden lg:w-2/3">
-          <h3 className="title-anim text-4xl font-bold">W</h3>
+          <h3 className="title-anim font-playfair text-4xl font-bold italic">
+            W
+          </h3>
           <p className="text-anim">
             Passionate about computers since childhood, I am a naturally curious
             individual always eager to learn more when a subject piques my
