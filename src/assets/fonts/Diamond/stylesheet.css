@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Diamond Grotesk';
+    src: url('DiamondGrotesk-Regular.woff2') format('woff2'),
+        url('DiamondGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

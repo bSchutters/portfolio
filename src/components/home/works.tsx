@@ -5,7 +5,7 @@ import Link from "../common/link";
 
 export default function Works() {
   return (
-    <div className="flex flex-col items-center gap-28">
+    <div className="works-test flex flex-col items-center gap-28">
       <Work
         title="Dayread"
         desc="Social network concept"
@@ -20,8 +20,8 @@ export default function Works() {
       />
       <Work
         title="Smile Coffee"
-        desc="Coffee shop concept"
         to="/work/smilecoffee"
+        desc="Coffee shop concept"
         img="./smilecoffee_mac_mockup.jpg"
       />
       <Link to="/work">
