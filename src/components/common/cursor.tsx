@@ -79,10 +79,12 @@ const Cursor = () => {
       <div
         ref={cursorRef2}
         className={
-          "pointer-events-none absolute z-50 hidden scale-0 rounded-xl bg-white px-4 py-2 "
+          "pointer-events-none absolute z-50 hidden scale-0 rounded-xl  bg-white px-4 py-2 "
         }
       >
-        {cursorTextOpen ? "Open" : "Work in progress"}
+        <p className="font-playfair font-bold italic">
+          {cursorTextOpen ? "Open" : "Work in progress"}
+        </p>
       </div>
     </div>
   );
