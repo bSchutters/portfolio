@@ -27,7 +27,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <nav className="text-md z-20 flex w-full justify-between">
+    <nav className="nav-anim text-md z-20 flex w-full justify-between">
       <Card className="text-lg  tracking-wide">
         <Link to="/">bSchutters</Link>
       </Card>
