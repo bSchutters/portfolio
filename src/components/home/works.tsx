@@ -12,6 +12,8 @@ export default function Works() {
         to="/work/dayread"
         img="/imgs/dayread_iphone_mockup.jpg"
         wip={false}
+        external={true}
+        tags="Web app"
       />
       <Work
         title="Popcorn Palace"
@@ -19,6 +21,8 @@ export default function Works() {
         to="/work/popa"
         img="/imgs/popa_mb_mockup.jpg"
         wip={true}
+        tags="Web app"
+        external={true}
       />
       <Work
         title="Smile Coffee"
@@ -26,6 +30,8 @@ export default function Works() {
         desc="Coffee shop concept"
         img="/imgs/smilecoffee_mac_mockup.jpg"
         wip={true}
+        external={true}
+        tags="Web app"
       />
       <Link to="/work">
         <Card className="flex items-center gap-4">
