@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Cursor from "../common/cursor";
 import Footer from "./footer";
 import Nav from "./nav";
@@ -7,6 +8,9 @@ interface LayoutProps {
 }
 
 export default function Layout({ children }: LayoutProps) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <Cursor />
