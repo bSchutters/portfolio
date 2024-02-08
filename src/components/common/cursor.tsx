@@ -11,6 +11,7 @@ const Cursor = () => {
   const [cursorTextOpen, setCursorTextOpen] = useState<boolean | undefined>(
     true,
   );
+  const [cursorTextWip, setCursorTextWip] = useState<boolean | undefined>(true);
 
   useEffect(() => {
     const cursor1 = cursorRef1.current;
@@ -21,6 +22,7 @@ const Cursor = () => {
       const hasCursorWipAttribut = hoveredElement?.hasAttribute("cursor-wip");
       const hasCursorOpenAttribut = hoveredElement?.hasAttribute("cursor-open");
       setCursorTextOpen(hasCursorOpenAttribut);
+      setCursorTextWip(hasCursorWipAttribut);
 
       if (hasCursorOpenAttribut || hasCursorWipAttribut) {
         setActiveCursor("cursor2");
@@ -79,10 +81,13 @@ const Cursor = () => {
       <div
         ref={cursorRef2}
         className={
-          "pointer-events-none absolute z-50 hidden scale-0 rounded-xl bg-white px-4 py-2 "
+          "pointer-events-none absolute z-50 hidden scale-0 rounded-xl  bg-white px-4 py-2 "
         }
       >
-        {cursorTextOpen ? "Open" : "Work in progress"}
+        <p className="font-playfair font-bold italic">
+          {cursorTextOpen ? "Open" : ""}
+          {cursorTextWip ? "Work in progress" : ""}
+        </p>
       </div>
     </div>
   );

@@ -10,21 +10,21 @@ export default function Works() {
         title="Dayread"
         desc="Social network concept"
         to="/work/dayread"
-        img="./dayread_iphone_mockup.jpg"
+        img="/imgs/dayread_iphone_mockup.jpg"
         wip={false}
       />
       <Work
         title="Popcorn Palace"
         desc="Rooftop cinema concept"
         to="/work/popa"
-        img="./popa_mb_mockup.jpg"
+        img="/imgs/popa_mb_mockup.jpg"
         wip={true}
       />
       <Work
         title="Smile Coffee"
         to="/work/smilecoffee"
         desc="Coffee shop concept"
-        img="./smilecoffee_mac_mockup.jpg"
+        img="/imgs/smilecoffee_mac_mockup.jpg"
         wip={true}
       />
       <Link to="/work">

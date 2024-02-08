@@ -12,13 +12,13 @@ export default function WorkPage() {
     tl.fromTo(
       ".tag-anim",
       { x: -20, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1, stagger: 0.5 },
-      "-=0.4",
+      { x: 0, opacity: 1, duration: 0.6, stagger: 0.3 },
+      "-=0.6",
     );
     tl.fromTo(
       ".item",
       { x: -20, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1, stagger: 0.5 },
+      { x: 0, opacity: 1, duration: 0.6, stagger: 0.3 },
       "-=0.8",
     );
     tl.fromTo(".footer-anim", { opacity: 0 }, { opacity: 1, duration: 1 });
@@ -30,7 +30,7 @@ export default function WorkPage() {
   console.log("items", items);
 
   const filters = [
-    "Use cases",
+    // "Use cases",
     "Web design",
     "Web app",
     "Branding",
@@ -83,6 +83,9 @@ export default function WorkPage() {
               img={item.img}
               title={`${item.name}`}
               desc={item.desc}
+              wip={item.wip}
+              tags={item.category.join(", ")}
+              external={item.external}
             />
           </div>
         ))}
