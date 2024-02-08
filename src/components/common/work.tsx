@@ -36,18 +36,20 @@ export default function Work({
         <img
           src={img}
           alt={title}
-          className="z-10 max-h-[450px] min-w-full rounded-3xl object-cover"
+          className="z-10 max-h-[450px] min-w-full rounded-xl object-cover lg:rounded-3xl"
           {...{ [cursorAttributeName]: "true" }}
         />
         <div className="flex flex-col gap-1">
-          <div className="text-2xl font-bold text-white">
+          <div className="text-lg font-bold text-white lg:text-2xl">
             {title} |
-            <span className="text-base font-medium  text-secondary">
+            <span className="text-base font-medium text-secondary">
               {" "}
               {tags}
             </span>
           </div>
-          <div className="text-base font-medium text-secondary">{desc}</div>
+          <div className="text-sm font-medium text-secondary lg:text-base">
+            {desc}
+          </div>
         </div>
       </LinkComponent>
     </>

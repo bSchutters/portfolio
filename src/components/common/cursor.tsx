@@ -73,10 +73,12 @@ const Cursor = () => {
   }, [activeCursor]);
 
   return (
-    <div className="pointer-events-none fixed z-50 h-screen w-screen overflow-x-hidden">
+    <div className="pointer-events-none fixed z-50 hidden h-screen w-screen overflow-x-hidden lg:block">
       <div
         ref={cursorRef1}
-        className={`pointer-events-none absolute z-50 h-4 w-4 rounded-full bg-black/0 backdrop-invert `}
+        className={
+          "pointer-events-none absolute z-50 h-4 w-4 rounded-full bg-black/0 backdrop-invert "
+        }
       />
       <div
         ref={cursorRef2}

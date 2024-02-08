@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "../common/card";
 import Link from "../common/link";
 import { LuChevronUp, LuMenu } from "react-icons/lu";
+import logo from "../../assets/bS.svg";
 
 export default function Nav() {
   const [opacity, setOpacity] = useState("opacity-0");
@@ -29,7 +30,9 @@ export default function Nav() {
   return (
     <nav className="nav-anim text-md z-20 flex w-full justify-between">
       <Card className="text-lg  tracking-wide">
-        <Link to="/">bSchutters</Link>
+        <Link to="/">
+          <img src={logo} alt="" className="w-5" />
+        </Link>
       </Card>
       <Card className="font hidden gap-5 tracking-wide lg:flex">
         <Link to="/">Home.</Link>
