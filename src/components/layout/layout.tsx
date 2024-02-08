@@ -14,7 +14,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Cursor />
-      <div className="flex min-h-screen max-w-full flex-col gap-24 bg-backg px-[50px] py-[25px] text-white lg:px-[100px] lg:py-[50px]">
+      <div className="flex min-h-screen max-w-full flex-col gap-24 bg-backg px-[25px] py-[25px] text-white lg:px-[100px] lg:py-[50px]">
         <Nav />
         {children}
         <Footer />
