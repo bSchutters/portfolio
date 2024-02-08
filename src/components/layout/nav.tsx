@@ -37,12 +37,12 @@ export default function Nav() {
 
   return (
     <nav className="nav-anim text-md relative z-20 flex w-full justify-between">
-      <div className="flex w-full flex-col gap-8 rounded-xl bg-primary/60 p-5 backdrop-blur-lg">
+      <div className="flex w-full flex-col gap-8 rounded-xl bg-primary/60 p-5 backdrop-blur-lg lg:w-auto">
         <div className="flex justify-between">
           <Link to="/">
             <img src={logo} alt="" className="w-5" />
           </Link>
-          <LuMenu size={22} onClick={handleClick} />
+          <LuMenu size={22} onClick={handleClick} className="lg:hidden" />
         </div>
         <div className={isOpen ? "flex flex-col gap-3" : "hidden"}>
           <Link to="/">Home.</Link>
