@@ -67,7 +67,7 @@ export default function WorkPage() {
         {filters.map((category, idx) => (
           <button
             onClick={() => handleFilterButtonClick(category)}
-            className={`tag-anim flex-grow rounded-full px-4 py-2 ${selectedFilters.includes(category) ? "bg-secondary" : "bg-primary"}`}
+            className={`tag-anim flex-grow rounded-full px-4 py-2 ${selectedFilters.includes(category) ? "bg-secondary" : "bg-primary"} transition-colors ease-in-out`}
             key={`filters-${idx}`}
           >
             {category}

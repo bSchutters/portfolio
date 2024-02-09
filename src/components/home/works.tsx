@@ -9,8 +9,8 @@ export default function Works() {
       <Work
         title="Dayread"
         desc="Social network concept"
-        to="/work/dayread"
-        img="/imgs/dayread_iphone_mockup.jpg"
+        to="https://dayread.lou-va.com"
+        img="/imgs/dayread_iphone_mockup.png"
         wip={false}
         external={true}
         tags="Web app"
@@ -18,9 +18,9 @@ export default function Works() {
       <Work
         title="Popcorn Palace"
         desc="Rooftop cinema concept"
-        to="/work/popa"
-        img="/imgs/popa_mb_mockup.jpg"
-        wip={true}
+        to="https://popa.lou-va.com"
+        img="/imgs/popa_imac_mockup.png"
+        wip={false}
         tags="Web app"
         external={true}
       />

@@ -43,7 +43,7 @@ export const items = [
       desc: "Restaurant branding",
       img: "/imgs/tat_ipad_mockup.png",
       to: "/work/tuttiatavola",
-      category: ["Branding, Social media"],
+      category: ["Branding", "Social media"],
       wip: true,
       external: false
     },

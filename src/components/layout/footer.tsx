@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="flex w-full flex-col gap-5 lg:w-1/2 ">
         <div className="flex w-full flex-col gap-5 lg:flex-row">
           <Card className="flex w-full flex-col gap-2 lg:w-1/2">
-            <h3 className="font-playfair mb-4 text-lg font-bold italic">
+            <h3 className="mb-4 font-playfair text-lg font-bold italic">
               Navigate
             </h3>
             <Link to="/">Home</Link>
@@ -22,13 +22,27 @@ export default function Footer() {
             <Link to="/contact">Contact</Link>
           </Card>
           <Card className="flex w-full flex-col gap-2 lg:w-1/2">
-            <h3 className="font-playfair mb-4 text-lg font-bold italic">
+            <h3 className="mb-4 font-playfair text-lg font-bold italic">
               Featured Work
             </h3>
-            <Link to="/work/dayread">Dayread</Link>
-            <Link to="/work/popa">Popcorn Palace</Link>
-            <Link to="/work/smilecoffee">Smile Coffee</Link>
-            <Link to="/work/cody">Cody clicker</Link>
+            <a
+              href="https://dayread.lou-va.com"
+              className="text-secondary transition-all ease-in-out hover:text-white"
+            >
+              Dayread
+            </a>
+            <a
+              href="https://popa.lou-va.com"
+              className="text-secondary transition-all ease-in-out hover:text-white"
+            >
+              Popcorn Palace
+            </a>
+            <a
+              href="#"
+              className="text-secondary transition-all ease-in-out hover:cursor-not-allowed"
+            >
+              Smile Coffee
+            </a>
           </Card>
         </div>
         <Card className="flex items-center justify-between">
@@ -42,18 +56,18 @@ export default function Footer() {
               Linkedin
             </a>
             <a
-              href="/"
-              target="_blank"
-              className="text-secondary transition-all ease-in-out hover:text-white"
-            >
-              Dribbble
-            </a>
-            <a
               href="https://github.com/bschutters"
               target="_blank"
               className="text-secondary transition-all ease-in-out hover:text-white"
             >
               Github
+            </a>
+            <a
+              href="#"
+              // target="_blank"
+              className="text-secondary transition-all ease-in-out hover:cursor-not-allowed"
+            >
+              Dribbble
             </a>
           </div>
         </Card>
