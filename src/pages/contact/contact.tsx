@@ -20,13 +20,13 @@ export default function Contact() {
   return (
     <Layout>
       <div className="flex flex-col gap-5  lg:flex-row">
-        <h3 className="text-anim font-playfair w-full text-4xl italic lg:w-1/2">
+        <h3 className="text-anim w-full font-playfair text-4xl italic lg:w-1/2">
           Contact me
         </h3>
         <div className="flex w-full flex-col gap-5 lg:w-1/2">
           <Card className="text-anim flex flex-col gap-2">
             <p className="font-playfair text-sm italic">Email</p>
-            <p className="text-xl">hello@bschutters.be</p>
+            <p className="text-xl">hello@sbryan.be</p>
           </Card>
           <Card className="text-anim flex flex-col gap-2">
             <p className="font-playfair text-sm italic">Phone</p>

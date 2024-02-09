@@ -23,7 +23,7 @@ export default function Header() {
           I'm Schutters Bryan, <br />a{" "}
           <span className="font-playfair italic">passionate</span> and{" "}
           <span className="font-playfair italic">detail-oriented</span> <br />
-          <span className="font-playfair italic">Fronted developer.</span>
+          <span className="font-playfair italic">Frontend developer.</span>
         </p>
       </div>
     </header>
