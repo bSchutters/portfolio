@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, type NavLinkProps } from "react-router-dom";
 
-interface LinkProps {
+interface LinkProps extends NavLinkProps {
   to: string;
   children: React.ReactNode;
   isActive?: boolean;
