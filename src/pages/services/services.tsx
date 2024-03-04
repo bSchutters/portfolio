@@ -3,6 +3,8 @@ import gsap from "gsap";
 import Card from "../../components/common/card";
 import Layout from "../../components/layout/layout";
 import Service from "../../components/services/service";
+import { serviceDev } from "./serviceDev";
+import { serviceDesgin } from "./serviceDesign";
 
 export default function Services() {
   useGSAP(() => {
@@ -32,6 +34,7 @@ export default function Services() {
     );
     tl.fromTo(".footer-anim", { opacity: 0 }, { opacity: 1, duration: 1 });
   });
+
   return (
     <Layout>
       <div className="overflow-hidden">
@@ -51,24 +54,26 @@ export default function Services() {
           </h3>
 
           <ul className="flex flex-col gap-2 overflow-hidden">
-            <Service title="HTML, CSS, Javascript" className="services-anim" />
-            <Service title="React" className="services-anim" />
-            <Service title="Typescript" className="services-anim" />
-            <Service title="TailwindCSS" className="services-anim" />
-            <Service title="Git" className="services-anim" />
-            <Service title="GSAP" className="services-anim" />
+            {serviceDev.map((serviceDev, index) => (
+              <Service
+                key={index}
+                title={serviceDev.title}
+                className="services-anim"
+              />
+            ))}
           </ul>
         </Card>
         <Card className="card-anim flex w-full flex-col gap-5 lg:w-1/2">
           <h3 className="font-playfair text-xl font-bold italic">Design</h3>
 
           <ul className="flex flex-col gap-2 overflow-hidden">
-            <Service title="Web design" className="services-anim" />
-            <Service title="Branding" className="services-anim" />
-            <Service title="Brand guides" className="services-anim" />
-            <Service title="Wireframes" className="services-anim" />
-            <Service title="Inforgraphics" className="services-anim" />
-            <Service title="And more..." className="services-anim" />
+            {serviceDesgin.map((serviceDesign, index) => (
+              <Service
+                key={index}
+                title={serviceDesign.title}
+                className="services-anim"
+              />
+            ))}
           </ul>
         </Card>
       </div>
